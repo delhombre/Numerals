@@ -22,4 +22,10 @@ public class Numerals(int arabicNumber)
         HexConversionStrategy strategy = new();
         return strategy.Convert(_arabicNumber);
     }
+
+    public string ToBinary()
+    {
+        BinaryConversionStrategy strategy = new();
+        return strategy.Convert(_arabicNumber);
+    }
 }
