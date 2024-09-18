@@ -26,7 +26,10 @@ public class RomanConversionStrategy : IConversionStrategy
     {
         if (number < 1 || number > 3999)
         {
-            throw new ArgumentOutOfRangeException();
+            throw new ArgumentOutOfRangeException(
+                nameof(number),
+                "Number must be between 1 and 3999"
+            );
         }
 
         StringBuilder result = new();

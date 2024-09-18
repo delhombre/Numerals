@@ -162,13 +162,13 @@ public class RomanNumeralsTest
     public void ShouldThrowExceptionWhenNumberIsZero()
     {
         Action action = () => Numerals.FromArabic(0).ToRoman();
-        action.Should().Throw<ArgumentOutOfRangeException>();
+        action.Should().Throw<ArgumentOutOfRangeException>("Number must be between 1 and 3999");
     }
 
     [Fact]
     public void ShouldThrowExceptionWhenNumberIsOver3999()
     {
         Action action = () => Numerals.FromArabic(4000).ToRoman();
-        action.Should().Throw<ArgumentOutOfRangeException>();
+        action.Should().Throw<ArgumentOutOfRangeException>("Number must be between 1 and 3999");
     }
 }
