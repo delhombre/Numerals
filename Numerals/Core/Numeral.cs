@@ -1,14 +1,14 @@
-using System.Text;
+using Numerals.Domain;
 
-namespace Numerals;
+namespace Numerals.Core;
 
-public class Numerals(int arabicNumber)
+public class Numeral(int arabicNumber)
 {
     private readonly int _arabicNumber = arabicNumber;
 
-    public static Numerals FromArabic(int arabic)
+    public static Numeral FromArabic(int arabic)
     {
-        return new Numerals(arabic);
+        return new Numeral(arabic);
     }
 
     public string ToRoman()

@@ -1,4 +1,4 @@
-namespace Numerals;
+namespace Numerals.Domain;
 
 public interface IConversionStrategy
 {

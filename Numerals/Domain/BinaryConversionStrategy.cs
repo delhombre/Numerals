@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Numerals;
+namespace Numerals.Domain;
 
 public class BinaryConversionStrategy : IConversionStrategy
 {
