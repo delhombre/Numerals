@@ -16,4 +16,10 @@ public class Numerals(int arabicNumber)
         RomanConversionStrategy strategy = new();
         return strategy.Convert(_arabicNumber);
     }
+
+    public string ToHexadecimal()
+    {
+        HexConversionStrategy strategy = new();
+        return strategy.Convert(_arabicNumber);
+    }
 }
